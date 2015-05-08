@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Samples-Catalog-android.iml" filepath="$PROJECT_DIR$/Samples-Catalog-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cobalt/cobalt.iml" filepath="$PROJECT_DIR$/cobalt/cobalt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/locationplugin/locationplugin.iml" filepath="$PROJECT_DIR$/locationplugin/locationplugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webservices/webservices.iml" filepath="$PROJECT_DIR$/webservices/webservices.iml" />
+    </modules>
+  </component>
+</project>
+
