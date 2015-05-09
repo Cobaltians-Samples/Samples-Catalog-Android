@@ -1,4 +1,4 @@
-package fr.cobaltians.cobaltcatalog;
+package fr.cobaltians.catalog;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

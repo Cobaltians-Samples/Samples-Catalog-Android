@@ -1,20 +1,19 @@
-package fr.cobaltians.cobaltcatalog.fragments;
-
-import fr.cobaltians.cobaltcatalog.R;
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+package com.cobaltians.catalog.fragments;
 
 import android.app.AlertDialog;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.cobaltians.catalog.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class CallbacksFragment extends AbstractFragment {
 

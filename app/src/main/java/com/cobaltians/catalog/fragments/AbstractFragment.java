@@ -1,4 +1,4 @@
-package fr.cobaltians.cobaltcatalog.fragments;
+package com.cobaltians.catalog.fragments;
 
 import fr.cobaltians.cobalt.Cobalt;
 import fr.cobaltians.cobalt.activities.CobaltActivity;

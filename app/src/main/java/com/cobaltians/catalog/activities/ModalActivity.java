@@ -1,6 +1,6 @@
-package fr.cobaltians.cobaltcatalog.activities;
+package com.cobaltians.catalog.activities;
 
-import fr.cobaltians.cobaltcatalog.fragments.ModalFragment;
+import com.cobaltians.catalog.fragments.ModalFragment;
 
 import fr.cobaltians.cobalt.fragments.CobaltFragment;
 

@@ -1,6 +1,4 @@
-package fr.cobaltians.cobaltcatalog.fragments;
-
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+package com.cobaltians.catalog.fragments;
 
 import org.json.JSONObject;
 

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22"
 
     defaultConfig {
-        applicationId "fr.cobaltians.cobaltcatalog"
+        applicationId "com.cobaltians.catalog"
         minSdkVersion 8
         targetSdkVersion 22
         versionCode 1

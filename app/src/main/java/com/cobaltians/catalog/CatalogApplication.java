@@ -1,13 +1,13 @@
-package fr.cobaltians.cobaltcatalog;
-
-import fr.cobaltians.cobalt.Cobalt;
+package com.cobaltians.catalog;
 
 import android.app.Application;
+
+import fr.cobaltians.cobalt.Cobalt;
 
 /**
  * Created by sebastien on 07/05/2014.
  */
-public class CobaltCatalogApplication extends Application {
+public class CatalogApplication extends Application {
 
     @Override
     public void onCreate() {

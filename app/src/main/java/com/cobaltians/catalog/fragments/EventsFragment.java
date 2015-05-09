@@ -1,9 +1,4 @@
-package fr.cobaltians.cobaltcatalog.fragments;
-
-import fr.cobaltians.cobaltcatalog.R;
-
-import fr.cobaltians.cobalt.Cobalt;
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+package com.cobaltians.catalog.fragments;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -13,8 +8,12 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.cobaltians.catalog.R;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import fr.cobaltians.cobalt.Cobalt;
 
 public class EventsFragment extends AbstractFragment {
 
