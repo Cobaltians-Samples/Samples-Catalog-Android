@@ -16,7 +16,7 @@
         
         <div class="block">
             <p>onPageShown will be fired when you come back from another page, allowing you to refresh content.</p>
-                    <a class="vibra" href="javascript:;" data-href="simple_page.html">Open an other page and come back</a>
+                    <a class="push" href="javascript:;" data-href="simple_page.html">Open an other page and come back</a>
             </div>
 
 
@@ -56,10 +56,6 @@
                         }
                     }
                 });
-
-                app.touch('a.vibra',function(){
-                    cobalt.sendEvent('vibrate')
-                })
 
                 app.initPage('Using Events')
 
