@@ -893,7 +893,7 @@ var cobalt = {
     //ANDROID ADAPTER
     //
     init: function () {
-        cobalt.platform = "Android";
+        cobalt.platform = { is : "Android" };
     },
     // handle events sent by native side
     handleEvent: function (json) {
