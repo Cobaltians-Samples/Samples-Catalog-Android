@@ -95,24 +95,23 @@
                         title : "Close me!",
                         message: "You gonna close this alert!",
                         buttons : buttons,
-                        callback : function(params){
-                            cobalt.toast("alert closed. Your choice was: "+ buttons[params.index])
+                        callback : function(data){
+                            cobalt.toast("alert closed. Your choice was: "+ buttons[data.index])
                         }
                     });
                     return false;
                 });
 
                 window.myObject={
-                    callMeBack:function(params){
-                        cobalt.log('myApp.callMeBack called with params='+params)
-                        cobalt.toast("alert closed. Your choice was: "+ buttons[params.index])
+                    callMeBack:function(data){
+                        cobalt.log('myApp.callMeBack called with data='+data)
+                        cobalt.toast("alert closed. Your choice was: "+ buttons[data.index])
 
                     }
                 }
 
                 app.touch('#alert3',function(){
                     cobalt.alert({
-                        id : 55, //TODO ensure alertID works!!
                         title : "Close me!",
                         message: "You gonna close this alert!",
                         buttons : buttons,
