@@ -15,5 +15,6 @@ public class CatalogApplication extends Application {
 
         Cobalt.DEBUG = true;
         Cobalt.getInstance(this).setResourcePath("www/common/");
+        Cobalt.getInstance(this).setPackageName(getApplicationContext().getPackageName() + ".activities.");
     }
 }
