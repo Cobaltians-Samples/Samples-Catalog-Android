@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.cobaltians.catalog"
@@ -23,4 +23,5 @@ dependencies {
     compile project(':cobalt')
     compile project(':webservices')
     compile project(':locationplugin')
+    compile project(':pubsubplugin')
 }
