@@ -1,0 +1,4 @@
+[submodule "cobalt"]
+	path = cobalt
+	url = git://github.com/cobaltians/Cobalt-Android.git
+	branch = 0.4.1
