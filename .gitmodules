@@ -18,3 +18,7 @@
 	path = Catalog/src/main/assets/www/common
 	url = git://github.com/Cobaltians-Samples/Samples-Catalog-Web.git
 	branch = 0.4.1
+[submodule "webservices"]
+	path = webservices
+	url = git://github.com/Cobaltians-Plugins/plugins-Webservices-Android.git
+	branch = 0.4.1
