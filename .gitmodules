@@ -10,3 +10,7 @@
 	path = pubsubplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-PubSub-Android.git
 	branch = 0.4.1
+[submodule "Catalog/src/main/assets/www/platform"]
+	path = Catalog/src/main/assets/www/platform
+	url = git://github.com/cobaltians/Cobalt-Web-Android.git
+	branch = 0.4.1
