@@ -2,3 +2,7 @@
 	path = cobalt
 	url = git://github.com/cobaltians/Cobalt-Android.git
 	branch = 0.4.1
+[submodule "locationplugin"]
+	path = locationplugin
+	url = git://github.com/Cobaltians-Plugins/plugins-Location-Android.git
+	branch = 0.4.1
