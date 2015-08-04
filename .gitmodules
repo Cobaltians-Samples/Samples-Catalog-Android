@@ -14,3 +14,7 @@
 	path = Catalog/src/main/assets/www/platform
 	url = git://github.com/cobaltians/Cobalt-Web-Android.git
 	branch = 0.4.1
+[submodule "Catalog/src/main/assets/www/common"]
+	path = Catalog/src/main/assets/www/common
+	url = git://github.com/Cobaltians-Samples/Samples-Catalog-Web.git
+	branch = 0.4.1
