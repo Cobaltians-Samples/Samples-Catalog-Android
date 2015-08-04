@@ -6,3 +6,7 @@
 	path = locationplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-Location-Android.git
 	branch = 0.4.1
+[submodule "pubsubplugin"]
+	path = pubsubplugin
+	url = git://github.com/Cobaltians-Plugins/plugins-PubSub-Android.git
+	branch = 0.4.1
