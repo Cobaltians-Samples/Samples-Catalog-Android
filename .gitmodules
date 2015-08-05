@@ -22,3 +22,12 @@
 	path = webservices
 	url = git://github.com/Cobaltians-Plugins/plugins-Webservices-Android.git
 	branch = 0.4.1
+[submodule "Catalog/src/main/assets/www/PubSubPlugin"]
+	path = Catalog/src/main/assets/www/PubSubPlugin
+	url = git://github.com/cobaltians-plugins/plugins-PubSub-Web.git
+[submodule "Catalog/src/main/assets/www/LocationPlugin"]
+	path = Catalog/src/main/assets/www/LocationPlugin
+	url = git://github.com/cobaltians-plugins/plugins-Location-Web.git
+[submodule "Catalog/src/main/assets/www/WebServicesPlugin"]
+	path = Catalog/src/main/assets/www/WebServicesPlugin
+	url = git://github.com/cobaltians-plugins/plugins-Webservices-Web.git
