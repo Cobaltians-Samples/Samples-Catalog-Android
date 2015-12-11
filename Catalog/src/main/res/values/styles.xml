@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme -->
-    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppBaseTheme" parent="@style/Theme.Cobalt.Light">
         <!-- Customize your theme here. -->
         <item name="android:actionBarStyle">@style/AppBaseActionBarTheme</item>
         <!-- Support library compatibility -->
@@ -20,7 +20,7 @@
     </style>
 
     <!-- Native Bars theme applied to the application or activity -->
-    <style name="NativeBarsTheme" parent="@style/Theme.AppCompat.Light">
+    <style name="NativeBarsTheme" parent="@style/Theme.Cobalt.Light">
         <item name="android:actionBarStyle">@style/AppBaseActionBarTheme</item>
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/AppBaseActionBarTheme</item>
