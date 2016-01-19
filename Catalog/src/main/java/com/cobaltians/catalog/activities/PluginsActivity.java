@@ -2,7 +2,7 @@ package com.cobaltians.catalog.activities;
 
 import com.cobaltians.catalog.fragments.SimpleHybridFragment;
 
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.fragments.CobaltFragment;
 
 
 public class PluginsActivity extends AbstractActivity {

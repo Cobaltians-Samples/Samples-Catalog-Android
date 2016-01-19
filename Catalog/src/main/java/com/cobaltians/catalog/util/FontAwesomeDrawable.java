@@ -6,8 +6,8 @@ import android.util.Log;
 
 import com.cobaltians.catalog.R;
 
-import fr.cobaltians.cobalt.Cobalt;
-import fr.cobaltians.cobalt.font.CobaltAbstractFontDrawable;
+import org.cobaltians.cobalt.Cobalt;
+import org.cobaltians.cobalt.font.CobaltAbstractFontDrawable;
 
 /**
  * Created by sebastienfamel on 10/12/15.

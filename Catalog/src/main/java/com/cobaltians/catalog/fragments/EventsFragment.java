@@ -13,7 +13,7 @@ import com.cobaltians.catalog.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import fr.cobaltians.cobalt.Cobalt;
+import org.cobaltians.cobalt.Cobalt;
 
 public class EventsFragment extends AbstractFragment {
 
