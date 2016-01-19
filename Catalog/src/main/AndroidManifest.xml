@@ -1,27 +1,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cobaltians.catalog"
+    package="org.cobaltians.catalog"
     android:windowSoftInputMode="adjustPan">
 
     <application
-        android:name=".CatalogApplication"
+        android:name="org.cobaltians.catalog.CatalogApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
 
 
-        <activity android:name="com.cobaltians.catalog.activities.CallbacksActivity" />
-        <activity android:name="com.cobaltians.catalog.activities.EventsActivity" />
-        <activity android:name="com.cobaltians.catalog.activities.ModalActivity" />
+        <activity android:name="org.cobaltians.catalog.activities.CallbacksActivity" />
+        <activity android:name="org.cobaltians.catalog.activities.EventsActivity" />
+        <activity android:name="org.cobaltians.catalog.activities.ModalActivity" />
         <activity
-            android:name="com.cobaltians.catalog.activities.NativeBarsActivity"
+            android:name="org.cobaltians.catalog.activities.NativeBarsActivity"
             android:theme="@style/NativeBarsTheme"/>
         <activity
-            android:name="com.cobaltians.catalog.activities.PluginsActivity"
+            android:name="org.cobaltians.catalog.activities.PluginsActivity"
             android:theme="@style/PluginsTheme" />
-        <activity android:name="com.cobaltians.catalog.activities.PullToRefreshActivity" />
-        <activity android:name="com.cobaltians.catalog.activities.PullToRefreshCustomActivity" />
-        <activity android:name="com.cobaltians.catalog.activities.SimpleHybridActivity">
+        <activity android:name="org.cobaltians.catalog.activities.PullToRefreshActivity" />
+        <activity android:name="org.cobaltians.catalog.activities.PullToRefreshCustomActivity" />
+        <activity android:name="org.cobaltians.catalog.activities.SimpleHybridActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

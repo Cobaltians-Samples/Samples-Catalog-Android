@@ -1,6 +1,6 @@
-package com.cobaltians.catalog.activities;
+package org.cobaltians.catalog.activities;
 
-import com.cobaltians.catalog.fragments.PullToRefreshFragment;
+import org.cobaltians.catalog.fragments.PullToRefreshFragment;
 
 import org.cobaltians.cobalt.fragments.CobaltFragment;
 

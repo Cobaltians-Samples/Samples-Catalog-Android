@@ -1,10 +1,10 @@
-package com.cobaltians.catalog.util;
+package org.cobaltians.catalog.util;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
 
-import com.cobaltians.catalog.R;
+import org.cobaltians.catalog.R;
 
 import org.cobaltians.cobalt.Cobalt;
 import org.cobaltians.cobalt.font.CobaltAbstractFontDrawable;

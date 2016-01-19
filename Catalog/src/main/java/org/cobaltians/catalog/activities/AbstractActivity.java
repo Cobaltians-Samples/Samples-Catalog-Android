@@ -1,4 +1,4 @@
-package com.cobaltians.catalog.activities;
+package org.cobaltians.catalog.activities;
 
 import org.cobaltians.cobalt.activities.CobaltActivity;
 

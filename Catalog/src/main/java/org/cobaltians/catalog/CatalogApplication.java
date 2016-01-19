@@ -1,4 +1,4 @@
-package com.cobaltians.catalog;
+package org.cobaltians.catalog;
 
 import android.app.Application;
 
