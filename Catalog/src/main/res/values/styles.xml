@@ -19,18 +19,16 @@
         <item name="actionBarStyle">@style/PluginsActionBarTheme</item>
     </style>
 
-    <!-- Native Bars theme applied to the application or activity -->
-    <style name="NativeBarsTheme" parent="@style/Theme.Cobalt.Light">
-        <item name="android:actionBarStyle">@style/AppBaseActionBarTheme</item>
-        <!-- Support library compatibility -->
-        <item name="actionBarStyle">@style/AppBaseActionBarTheme</item>
-    </style>
-
     <!-- ActionBar themes -->
     <style name="AppBaseActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/cobalt_blue</item>
         <!-- Support library compatibility -->
         <item name="background">@color/cobalt_blue</item>
+        <!--
+        <item name="android:actionBarItemBackground"></item>
+        <item name="android:actionMenuTextColor"></item>
+        <item name="android:itemBackground"></item>
+        -->
     </style>
     <style name="PluginsActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/cobalt_green</item>
