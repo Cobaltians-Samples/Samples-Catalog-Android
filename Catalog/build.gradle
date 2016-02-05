@@ -26,4 +26,5 @@ dependencies {
     compile project(':webservices')
     compile project(':locationplugin')
     compile project(':pubsubplugin')
+    compile project(':appinfosplugin')
 }
