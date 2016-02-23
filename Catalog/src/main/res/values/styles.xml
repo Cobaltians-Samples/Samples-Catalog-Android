@@ -6,6 +6,9 @@
         <item name="android:actionBarStyle">@style/AppBaseActionBarTheme</item>
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/AppBaseActionBarTheme</item>
+
+        <item name="colorPrimary">@color/cobalt_blue_light</item>
+
     </style>
 
     <style name="AppTheme" parent="AppBaseTheme">
@@ -34,6 +37,14 @@
         <item name="android:background">@color/cobalt_green</item>
         <!-- Support library compatibility -->
         <item name="background">@color/cobalt_green</item>
+    </style>
+
+    <style name="ThemeOverlay.Cobalt.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+    </style>
+
+    <style name="ThemeOverlay.Cobalt.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
     </style>
 
 </resources>
