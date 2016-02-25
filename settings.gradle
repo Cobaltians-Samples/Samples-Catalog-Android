@@ -1,1 +1,1 @@
-include ':Catalog', ':cobalt', ':webservices', ':locationplugin', ':pubsubplugin', ':appinfosplugin'
+include ':Catalog', ':cobalt', ':webservices', ':locationplugin', ':pubsubplugin', ':appinfosplugin', ':fontAwesome'

@@ -37,3 +37,6 @@
 [submodule "appinfosplugin"]
 	path = appinfosplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-AppInfos-Android.git
+[submodule "fontAwesome"]
+	path = fontAwesome
+	url = https://github.com/Cobaltians-Fonts/Fonts-FontAwesome-Android.git
