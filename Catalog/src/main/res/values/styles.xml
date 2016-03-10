@@ -1,11 +1,14 @@
 <resources>
 
     <!-- Base application theme -->
-    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppBaseTheme" parent="@style/Theme.Cobalt.Light">
         <!-- Customize your theme here. -->
         <item name="android:actionBarStyle">@style/AppBaseActionBarTheme</item>
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/AppBaseActionBarTheme</item>
+
+        <item name="colorPrimary">@color/cobalt_blue_light</item>
+
     </style>
 
     <style name="AppTheme" parent="AppBaseTheme">
@@ -19,23 +22,29 @@
         <item name="actionBarStyle">@style/PluginsActionBarTheme</item>
     </style>
 
-    <!-- Native Bars theme applied to the application or activity -->
-    <style name="NativeBarsTheme" parent="@style/Theme.AppCompat.Light">
-        <item name="android:actionBarStyle">@style/AppBaseActionBarTheme</item>
-        <!-- Support library compatibility -->
-        <item name="actionBarStyle">@style/AppBaseActionBarTheme</item>
-    </style>
-
     <!-- ActionBar themes -->
     <style name="AppBaseActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/cobalt_blue</item>
         <!-- Support library compatibility -->
         <item name="background">@color/cobalt_blue</item>
+        <!--
+        <item name="android:actionBarItemBackground"></item>
+        <item name="android:actionMenuTextColor"></item>
+        <item name="android:itemBackground"></item>
+        -->
     </style>
     <style name="PluginsActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/cobalt_green</item>
         <!-- Support library compatibility -->
         <item name="background">@color/cobalt_green</item>
+    </style>
+
+    <style name="ThemeOverlay.Cobalt.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+    </style>
+
+    <style name="ThemeOverlay.Cobalt.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
     </style>
 
 </resources>

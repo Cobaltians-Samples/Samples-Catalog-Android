@@ -1,4 +1,4 @@
-package com.cobaltians.catalog.fragments;
+package org.cobaltians.catalog.fragments;
 
 import android.app.AlertDialog;
 import android.util.Log;
@@ -6,8 +6,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
-
-import com.cobaltians.catalog.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,14 +31,14 @@ public class CallbacksFragment extends AbstractFragment {
 
 	@Override
 	protected int getLayoutToInflate() {
-		return R.layout.callbacks_fragment;
+		return org.cobaltians.catalog.R.layout.callbacks_fragment;
 	}
 
 	@Override
 	protected void setUpViews(View rootView) {
 		super.setUpViews(rootView);
-        btnDoSomeMath = (Button) rootView.findViewById(R.id.btnDoSomeMaths);
-        btnTestAuto = (Button) rootView.findViewById(R.id.btnTestAuto);
+        btnDoSomeMath = (Button) rootView.findViewById(org.cobaltians.catalog.R.id.btnDoSomeMaths);
+        btnTestAuto = (Button) rootView.findViewById(org.cobaltians.catalog.R.id.btnTestAuto);
 		}
 
 	@Override

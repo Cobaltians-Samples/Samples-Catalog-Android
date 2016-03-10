@@ -1,6 +1,6 @@
-package com.cobaltians.catalog.fragments;
+package org.cobaltians.catalog.fragments;
 
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.fragments.CobaltFragment;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

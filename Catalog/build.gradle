@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.cobaltians.catalog"
+        applicationId "org.cobaltians.catalog"
         minSdkVersion 8
         targetSdkVersion 23
         versionCode 1
@@ -26,4 +26,6 @@ dependencies {
     compile project(':webservices')
     compile project(':locationplugin')
     compile project(':pubsubplugin')
+    compile project(':appinfosplugin')
+    compile project(':fontAwesome')
 }

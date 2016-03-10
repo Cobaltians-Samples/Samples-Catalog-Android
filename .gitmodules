@@ -31,3 +31,12 @@
 [submodule "Catalog/src/main/assets/www/WebServicesPlugin"]
 	path = Catalog/src/main/assets/www/WebServicesPlugin
 	url = git://github.com/cobaltians-plugins/plugins-Webservices-Web.git
+[submodule "Catalog/src/main/assets/www/AppInfosPlugin"]
+	path = Catalog/src/main/assets/www/AppInfosPlugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-AppInfos-Web.git
+[submodule "appinfosplugin"]
+	path = appinfosplugin
+	url = git://github.com/Cobaltians-Plugins/plugins-AppInfos-Android.git
+[submodule "fontAwesome"]
+	path = fontAwesome
+	url = https://github.com/Cobaltians-Fonts/Fonts-FontAwesome-Android.git

@@ -1,7 +1,7 @@
-package com.cobaltians.catalog.fragments;
+package org.cobaltians.catalog.fragments;
 
-import fr.cobaltians.cobalt.Cobalt;
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.Cobalt;
+import org.cobaltians.cobalt.fragments.CobaltFragment;
 
 import android.util.Log;
 

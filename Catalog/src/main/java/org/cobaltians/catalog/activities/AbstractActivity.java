@@ -1,6 +1,6 @@
-package com.cobaltians.catalog.activities;
+package org.cobaltians.catalog.activities;
 
-import fr.cobaltians.cobalt.activities.CobaltActivity;
+import org.cobaltians.cobalt.activities.CobaltActivity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;

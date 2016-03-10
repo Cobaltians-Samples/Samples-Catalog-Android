@@ -1,8 +1,8 @@
-package com.cobaltians.catalog.fragments;
+package org.cobaltians.catalog.fragments;
 
-import fr.cobaltians.cobalt.Cobalt;
-import fr.cobaltians.cobalt.activities.CobaltActivity;
-import fr.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.Cobalt;
+import org.cobaltians.cobalt.activities.CobaltActivity;
+import org.cobaltians.cobalt.fragments.CobaltFragment;
 
 import android.support.v7.app.ActionBar;
 import android.util.Log;
