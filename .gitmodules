@@ -40,3 +40,9 @@
 [submodule "fontAwesome"]
 	path = fontAwesome
 	url = https://github.com/Cobaltians-Fonts/Fonts-FontAwesome-Android.git
+[submodule "actionpickerplugin"]
+	path = actionpickerplugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-ActionPicker-Android.git
+[submodule "Catalog/src/main/assets/www/ActionPickerPlugin"]
+	path = Catalog/src/main/assets/www/ActionPickerPlugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-ActionPicker-Web.git

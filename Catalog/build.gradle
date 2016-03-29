@@ -28,4 +28,5 @@ dependencies {
     compile project(':pubsubplugin')
     compile project(':appinfosplugin')
     compile project(':fontAwesome')
+    compile project(':actionpickerplugin')
 }
