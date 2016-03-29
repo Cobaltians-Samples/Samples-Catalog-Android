@@ -10,4 +10,9 @@ public class SimpleHybridActivity extends AbstractActivity {
     protected CobaltFragment getFragment() {
 		return Cobalt.getInstance(this).getFragmentForController(SimpleHybridFragment.class, "default", "index.html");
 	}
+
+	@Override
+	public String getInitPage() {
+		return "index.html";
+	}
 }
