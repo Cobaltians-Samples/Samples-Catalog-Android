@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.cobaltians.catalog"
+    xmlns:tools="http://schemas.android.com/tools"
     android:windowSoftInputMode="adjustPan">
+
+    <uses-sdk
+        tools:overrideLibrary="org.xwalk.core"/>
 
     <application
         android:name="org.cobaltians.catalog.CatalogApplication"
