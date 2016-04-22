@@ -46,3 +46,9 @@
 [submodule "Catalog/src/main/assets/www/ActionPickerPlugin"]
 	path = Catalog/src/main/assets/www/ActionPickerPlugin
 	url = git@github.com:Cobaltians-Plugins/Plugins-ActionPicker-Web.git
+[submodule "networkstatusplugin"]
+	path = networkstatusplugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-NetworkStatus-Android.git
+[submodule "Catalog/src/main/assets/www/NetworkStatusPlugin"]
+	path = Catalog/src/main/assets/www/NetworkStatusPlugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-NetworkStatus-Web.git
