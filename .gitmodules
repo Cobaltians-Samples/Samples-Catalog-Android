@@ -33,22 +33,22 @@
 	url = git://github.com/cobaltians-plugins/plugins-Webservices-Web.git
 [submodule "Catalog/src/main/assets/www/AppInfosPlugin"]
 	path = Catalog/src/main/assets/www/AppInfosPlugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-AppInfos-Web.git
+	url = git://github.com/Cobaltians-Plugins/Plugins-AppInfos-Web.git
 [submodule "appinfosplugin"]
 	path = appinfosplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-AppInfos-Android.git
 [submodule "fontAwesome"]
 	path = fontAwesome
-	url = https://github.com/Cobaltians-Fonts/Fonts-FontAwesome-Android.git
+	url = git://github.com/Cobaltians-Fonts/Fonts-FontAwesome-Android.git
 [submodule "actionpickerplugin"]
 	path = actionpickerplugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-ActionPicker-Android.git
+	url = git://github.com/Cobaltians-Plugins/Plugins-ActionPicker-Android.git
 [submodule "Catalog/src/main/assets/www/ActionPickerPlugin"]
 	path = Catalog/src/main/assets/www/ActionPickerPlugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-ActionPicker-Web.git
+	url = git://github.com/Cobaltians-Plugins/Plugins-ActionPicker-Web.git
 [submodule "networkstatusplugin"]
 	path = networkstatusplugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-NetworkStatus-Android.git
+	url = git://github.com/Cobaltians-Plugins/Plugins-NetworkStatus-Android.git
 [submodule "Catalog/src/main/assets/www/NetworkStatusPlugin"]
 	path = Catalog/src/main/assets/www/NetworkStatusPlugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-NetworkStatus-Web.git
+	url = git://github.com/Cobaltians-Plugins/Plugins-NetworkStatus-Web.git
