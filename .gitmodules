@@ -52,3 +52,9 @@
 [submodule "Catalog/src/main/assets/www/NetworkStatusPlugin"]
 	path = Catalog/src/main/assets/www/NetworkStatusPlugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-NetworkStatus-Web.git
+[submodule "batterystatusplugin"]
+	path = batterystatusplugin
+	url = git://github.com/Cobaltians-Plugins/Plugins-BatteryStatus-Android.git
+[submodule "Catalog/src/main/assets/www/BatteryStatusPlugin"]
+	path = Catalog/src/main/assets/www/BatteryStatusPlugin
+	url = git://github.com/Cobaltians-Plugins/Plugins-BatteryStatus-Web.git
