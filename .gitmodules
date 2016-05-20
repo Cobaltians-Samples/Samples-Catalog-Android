@@ -58,3 +58,9 @@
 [submodule "Catalog/src/main/assets/www/BatteryStatusPlugin"]
 	path = Catalog/src/main/assets/www/BatteryStatusPlugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-BatteryStatus-Web.git
+[submodule "Plugins-Share-Android"]
+	path = shareplugin
+	url = git://github.com/Cobaltians-Plugins/Plugins-Share-Android.git
+[submodule "Catalog/src/main/assets/www/Plugins-Share-Web"]
+	path = Catalog/src/main/assets/www/SharePlugin
+	url = git://github.com/Cobaltians-Plugins/Plugins-Share-Web.git

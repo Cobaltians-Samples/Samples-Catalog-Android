@@ -1,1 +1,1 @@
-include ':Catalog', ':cobalt', ':webservices', ':locationplugin', ':pubsubplugin', ':appinfosplugin', ':fontAwesome', ':actionpickerplugin', ':networkstatusplugin', ':batterystatusplugin'
+include ':Catalog', ':cobalt', ':webservices', ':locationplugin', ':pubsubplugin', ':appinfosplugin', ':fontAwesome', ':actionpickerplugin', ':networkstatusplugin', ':batterystatusplugin', ':shareplugin'
