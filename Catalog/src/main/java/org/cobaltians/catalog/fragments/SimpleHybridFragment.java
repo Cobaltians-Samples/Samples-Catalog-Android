@@ -16,7 +16,7 @@ public class SimpleHybridFragment extends AbstractFragment implements WebService
 			String name = (i%2 == 0) ? "Léo" : "Popi";
 			String imageName = "img/ic_launcher.png";
 			double age = (i <= 100) ? i : i/100.0;
-			
+
 			JSONObject j = new JSONObject();
 			try {
 				j.put("username", name);
@@ -59,39 +59,31 @@ public class SimpleHybridFragment extends AbstractFragment implements WebService
 
 	}
 
-    @Override
-    public JSONObject treatData(JSONObject data, JSONObject process) {
-        try {
-            String extension = process.getString("ext");
-            JSONObject dataInData = data.getJSONObject("data");
-            JSONObject responseData = dataInData.getJSONObject("responseData");
-            JSONArray results = responseData.getJSONArray("results");
+	@Override
+		public JSONObject treatData(JSONObject data, JSONObject process) {
+			try {
+				int count = process.getInt("count");
+				JSONArray imageList = data.getJSONArray("result");
 
-            if (results.length()>0) {
-                JSONArray resultsTreat = null;
-                for (int i = 0 ; i < results.length() ; i++) {
-                    JSONObject item = results.getJSONObject(i);
-                    String url = item.getString("url");
+				if (imageList.length() > 0) {
+					int max = Math.min(count, imageList.length());
+					JSONArray filteredImageList = new JSONArray();
 
-                    int urlLength = url.length();
-                    int extensionLength = extension.length();
+					for (int i = 0; i < max; i++) {
+						JSONObject item = imageList.getJSONObject((int) (Math.random() * imageList.length()));
 
-                    String urlExtension = url.substring(urlLength - extensionLength);
-                    if (urlExtension.equals(extension)) {
-                        if (resultsTreat == null)
-                            resultsTreat = new JSONArray();
-                        resultsTreat.put(item);
-                    }
-                }
-                responseData.put("results", resultsTreat);
-            }
+						filteredImageList.put(item);
+					}
 
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+					data.put("result", filteredImageList);
+				}
 
-        return data;
-    }
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			return data;
+		}
 
     @Override
     public boolean handleError(JSONObject call, JSONObject response) {

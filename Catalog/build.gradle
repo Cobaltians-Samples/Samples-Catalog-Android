@@ -30,4 +30,6 @@ dependencies {
     compile project(':fontAwesome')
     compile project(':actionpickerplugin')
     compile project(':networkstatusplugin')
+    compile project(':batterystatusplugin')
+    compile project(':shareplugin')
 }
