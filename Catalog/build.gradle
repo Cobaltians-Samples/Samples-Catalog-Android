@@ -33,4 +33,5 @@ dependencies {
     compile project(':batterystatusplugin')
     compile project(':shareplugin')
     compile project(':pdfplugin')
+    compile project(':snackbarplugin')
 }

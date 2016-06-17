@@ -72,3 +72,9 @@
 	path = Catalog/src/main/assets/www/PdfPlugin
 	url = git@github.com:Cobaltians-Plugins/Plugins-Pdf-Web.git
 	branch = develop
+[submodule "snackbarplugin"]
+	path = snackbarplugin
+	url = git://github.com/Cobaltians-Plugins/Plugins-Snackbar-Android.git
+[submodule "Catalog/src/main/assets/www/SnackbarPlugin"]
+	path = Catalog/src/main/assets/www/SnackbarPlugin
+	url = git://github.com/Cobaltians-Plugins/Plugins-Snackbar-Web.git
