@@ -64,11 +64,3 @@
 [submodule "Catalog/src/main/assets/www/Plugins-Share-Web"]
 	path = Catalog/src/main/assets/www/SharePlugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-Share-Web.git
-[submodule "pdfplugin"]
-	path = pdfplugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-Pdf-Android.git
-	branch = develop
-[submodule "Catalog/src/main/assets/www/PdfPlugin"]
-	path = Catalog/src/main/assets/www/PdfPlugin
-	url = git@github.com:Cobaltians-Plugins/Plugins-Pdf-Web.git
-	branch = develop
