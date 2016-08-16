@@ -96,35 +96,22 @@ public class EventsFragment extends AbstractFragment {
 		}
 	}
 
-	//  unhandled JS messages
-	@Override
-	protected void onUnhandledMessage(JSONObject message) { }
 	@Override
 	protected boolean onUnhandledEvent(String name, JSONObject data, String callback) {
-        if (super.onUnhandledEvent(name, data, callback)) return true;
-        else if(name.equals(JSNameHello)) {
+        if(name.equals(JSNameHello)) {
             AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
             alert.setMessage("hello world");
             AlertDialog mAlert = alert.create();
             mAlert.setCanceledOnTouchOutside(true);
             mAlert.show();
-
             return true;
         }
         return false;
 	}
-	@Override
-	protected boolean onUnhandledCallback(String name, JSONObject data) {
-		return false;
-	}
-
 
 	@Override
-	protected void onPullToRefreshRefreshed() {		
-	}
-
+	protected void onPullToRefreshRefreshed() { }
 
 	@Override
-	protected void onInfiniteScrollRefreshed() {		
-	}
+	protected void onInfiniteScrollRefreshed() { }
 }

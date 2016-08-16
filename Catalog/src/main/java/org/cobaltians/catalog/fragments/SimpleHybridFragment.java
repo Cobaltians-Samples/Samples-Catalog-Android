@@ -32,32 +32,11 @@ public class SimpleHybridFragment extends AbstractFragment implements WebService
 		return a;
 	}
 
-	//  unhandled JS messages
 	@Override
-	protected void onUnhandledMessage(JSONObject message) {
-
-    }
-
-    @Override
-	protected boolean onUnhandledEvent(String name, JSONObject data, String callback) {
-        if (super.onUnhandledEvent(name, data, callback)) return true;
-		else return false;
-	}
+	protected void onPullToRefreshRefreshed() { }
 
 	@Override
-	protected boolean onUnhandledCallback(String name, JSONObject data) {
-		return false;
-	}
-
-	@Override
-	protected void onPullToRefreshRefreshed() {
-
-	}
-
-	@Override
-	protected void onInfiniteScrollRefreshed() {
-
-	}
+	protected void onInfiniteScrollRefreshed() { }
 
 	@Override
 		public JSONObject treatData(JSONObject data, JSONObject process) {

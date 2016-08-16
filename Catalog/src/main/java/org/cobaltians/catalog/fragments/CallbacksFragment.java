@@ -75,15 +75,9 @@ public class CallbacksFragment extends AbstractFragment {
         });
 	}
 
-	// unhandled JS messages
-	@Override
-	protected void onUnhandledMessage(JSONObject message) {
-		
-	}
 	@Override
 	protected boolean onUnhandledEvent(String name, JSONObject data, String callback) {
-        if (super.onUnhandledEvent(name, data, callback)) return true;
-        else if (name.equals(JSAddValues)) {
+        if (name.equals(JSAddValues)) {
             try {
                 JSONArray values = data.getJSONArray(kValues);
                 int val1 = values.getInt(0);
@@ -102,6 +96,7 @@ public class CallbacksFragment extends AbstractFragment {
         }
 		return false;
 	}
+
 	@Override
 	protected boolean onUnhandledCallback(String name, JSONObject data) {
         if (name.equals(JSValuesCallback)) {
@@ -149,12 +144,10 @@ public class CallbacksFragment extends AbstractFragment {
 	}
 
 	@Override
-	protected void onPullToRefreshRefreshed() {
-	}
+	protected void onPullToRefreshRefreshed() { }
 
 	@Override
-	protected void onInfiniteScrollRefreshed() {		
-	}
+	protected void onInfiniteScrollRefreshed() { }
 
     private void launchTest(int index){
         JSONObject data = new JSONObject();

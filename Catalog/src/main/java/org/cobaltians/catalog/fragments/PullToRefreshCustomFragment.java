@@ -1,7 +1,5 @@
 package org.cobaltians.catalog.fragments;
 
-import org.json.JSONObject;
-
 public class PullToRefreshCustomFragment extends AbstractFragment {
 	
 	@Override
@@ -13,20 +11,4 @@ public class PullToRefreshCustomFragment extends AbstractFragment {
                                 android.R.color.holo_blue_dark,
                                 android.R.color.holo_orange_light);
 	}
-
-    @Override
-    protected boolean onUnhandledEvent(String name, JSONObject data, String callback) {
-        if (super.onUnhandledEvent(name, data, callback)) return true;
-        else return false;
-    }
-
-    @Override
-    protected boolean onUnhandledCallback(String name, JSONObject data) {
-        return false;
-    }
-
-    @Override
-    protected void onUnhandledMessage(JSONObject message) {
-
-    }
 }
