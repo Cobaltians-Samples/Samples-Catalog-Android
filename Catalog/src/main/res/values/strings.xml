@@ -2,4 +2,9 @@
 
     <string name="app_name">Catalog</string>
 
+    <string name="do_some_maths">Do some maths</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="test_auto">Test Auto</string>
+
 </resources>

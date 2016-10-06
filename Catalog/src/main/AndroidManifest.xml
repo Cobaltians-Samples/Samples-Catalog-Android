@@ -4,7 +4,7 @@
 
     <application
         android:name="org.cobaltians.catalog.CatalogApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
@@ -19,9 +19,7 @@
         <activity android:name=".activities.EventsActivity" />
         <activity android:name=".activities.ModalActivity" />
         <activity android:name=".activities.NativeBarsActivity" />
-        <activity
-            android:name=".activities.PluginsActivity"
-            android:theme="@style/PluginsTheme" />
+        <activity android:name=".activities.PluginsActivity" />
         <activity android:name=".activities.PullToRefreshActivity" />
         <activity android:name=".activities.PullToRefreshCustomActivity" />
 

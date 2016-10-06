@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Holo colors below were copied from colors_holo.xml res file from Android SDK because it is
+    available only for Android 4+ API 14 -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+
+    <color name="cobalt_text_primary_blue">#3498DB</color>
+
+    <!-- TODO: delete following colors when status bar feature will be realesed -->
     <color name="cobalt_primary_blue">#3498DB</color>
     <color name="cobalt_primary_blue_dark">#1377BA</color>
     <color name="cobalt_primary_green">#34DB98</color>

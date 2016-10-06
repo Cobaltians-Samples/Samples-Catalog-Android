@@ -2,10 +2,8 @@ package org.cobaltians.catalog.fragments;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 import org.cobaltians.catalog.R;
@@ -29,14 +27,6 @@ public class EventsFragment extends AbstractFragment {
 		super.onCreate(savedInstanceState);
 		zoomLevel = 10;
 	}
-
-	
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View view = super.onCreateView(inflater, container, savedInstanceState);
-		return view;
-	}
-	
 	
 	@Override
 	protected int getLayoutToInflate() {

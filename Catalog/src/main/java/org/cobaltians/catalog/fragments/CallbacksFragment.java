@@ -48,7 +48,7 @@ public class CallbacksFragment extends AbstractFragment {
 			public void onClick(View arg0) {
 				JSONObject data = new JSONObject();
 				try {
-					ArrayList<Integer> values = new ArrayList<Integer>();
+					ArrayList<Integer> values = new ArrayList<>();
 					values.add(1);
 					values.add(3);
 					data.put(kValues, new JSONArray(values));
@@ -62,7 +62,7 @@ public class CallbacksFragment extends AbstractFragment {
         btnTestAuto.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                mArrayTest = new ArrayList<Object>();
+                mArrayTest = new ArrayList<>();
                 mArrayTest.add(0, "quotes : it's working \"great\"");
                 mArrayTest.add(1, "+ is nice.");
                 mArrayTest.add(2, "url &eactue;é&12;\n3#23:%20'\\u0020hop");

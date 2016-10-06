@@ -12,6 +12,8 @@ public abstract class AbstractActivity extends CobaltActivity {
         super.onCreate(savedInstanceState);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("");
+        if (actionBar != null) {
+            actionBar.setTitle("");
+        }
     }
 }
