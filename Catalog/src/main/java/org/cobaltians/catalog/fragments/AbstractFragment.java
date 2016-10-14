@@ -18,5 +18,5 @@ public abstract class AbstractFragment extends CobaltFragment {
     protected boolean onUnhandledEvent(String event, JSONObject data, String callback) {return false;}
 
     @Override
-    protected void onUnhandledMessage(JSONObject message) { }
+    protected boolean onUnhandledMessage(JSONObject message) { return false; }
 }
