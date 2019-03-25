@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "org.cobaltians.catalog"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -22,15 +21,19 @@ android {
 }
 
 dependencies {
-    compile project(':cobalt')
-    compile project(':webservices')
-    compile project(':locationplugin')
-    compile project(':pubsubplugin')
-    compile project(':appinfosplugin')
-    compile project(':fontAwesome')
-    compile project(':actionpickerplugin')
-    compile project(':networkstatusplugin')
-    compile project(':batterystatusplugin')
-    compile project(':shareplugin')
-    compile project(':pdfplugin')
+    implementation 'junit:junit:4.12'
+
+    implementation project(path: ':cobalt')
+    implementation project(path: ':webservices')
+    implementation project(path: ':locationplugin')
+    implementation project(path: ':pubsubplugin')
+    implementation project(path: ':appinfosplugin')
+    implementation project(path: ':fontAwesome')
+    implementation project(path: ':actionpickerplugin')
+    implementation project(path: ':networkstatusplugin')
+    implementation project(path: ':batterystatusplugin')
+    implementation project(path: ':shareplugin')
+    implementation project(path: ':pdfplugin')
+
+
 }
