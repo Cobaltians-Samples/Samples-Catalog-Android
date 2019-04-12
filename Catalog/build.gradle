@@ -24,7 +24,6 @@ dependencies {
     implementation 'junit:junit:4.12'
 
     implementation project(path: ':cobalt')
-    implementation project(path: ':webservices')
     implementation project(path: ':locationplugin')
     implementation project(path: ':pubsubplugin')
     implementation project(path: ':appinfosplugin')
