@@ -14,6 +14,5 @@ public class CatalogApplication extends Application {
         super.onCreate();
 
         Cobalt.DEBUG = true;
-        Cobalt.getInstance(this).setResourcePath("www/common/");
     }
 }
