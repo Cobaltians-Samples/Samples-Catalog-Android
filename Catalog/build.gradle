@@ -23,6 +23,7 @@ android {
 dependencies {
     implementation 'junit:junit:4.12'
 
+    implementation project(path: ':permissions')
     implementation project(path: ':cobalt')
     implementation project(path: ':locationplugin')
     implementation project(path: ':pubsubplugin')
@@ -33,6 +34,7 @@ dependencies {
     implementation project(path: ':batterystatusplugin')
     implementation project(path: ':shareplugin')
     implementation project(path: ':pdfplugin')
+    implementation project(path: ':geolocpickerplugin')
 
 
 }

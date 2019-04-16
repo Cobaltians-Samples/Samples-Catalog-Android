@@ -33,3 +33,7 @@
 	path = Catalog/src/main/assets/www
 	url = git@github.com:Cobaltians-Samples/Samples-Catalog-Web.git
 	branch = cobalt1.0
+[submodule "geolocpickerplugin"]
+	path = geolocpickerplugin
+	url = https://github.com/Cobaltians-Plugins/Plugins-GeolocPicker-Android.git
+	branch = cobalt1.0
