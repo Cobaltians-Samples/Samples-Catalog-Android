@@ -37,3 +37,7 @@
 	path = geolocpickerplugin
 	url = https://github.com/Cobaltians-Plugins/Plugins-GeolocPicker-Android.git
 	branch = cobalt1.0
+[submodule "signatureplugin"]
+	path = signatureplugin
+	url = https://github.com/Cobaltians-Plugins/Plugins-Signature-Android.git
+	branch = cobalt1.0

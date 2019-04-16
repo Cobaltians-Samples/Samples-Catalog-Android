@@ -35,6 +35,7 @@ dependencies {
     implementation project(path: ':shareplugin')
     implementation project(path: ':pdfplugin')
     implementation project(path: ':geolocpickerplugin')
+    implementation project(path: ':signatureplugin')
 
 
 }
