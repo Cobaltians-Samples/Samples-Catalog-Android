@@ -5,6 +5,7 @@ import android.content.Intent;
 import org.cobaltians.cobalt.plugin.CobaltPluginWebContainer;
 
 import io.kristal.geolocpicker.GeolocPicker;
+import io.kristal.signature.Signature;
 
 public class SimpleHybridFragment extends AbstractFragment {
 
@@ -20,6 +21,11 @@ public class SimpleHybridFragment extends AbstractFragment {
 		// Forward result to GeolocPicker
 		GeolocPicker geolocPicker = (GeolocPicker)GeolocPicker.getInstance(new CobaltPluginWebContainer(getActivity(),this));
 		geolocPicker.onActivityResult(requestCode, resultCode, data);
+
+		// Result for Signature
+		Signature signature = (Signature)Signature.getInstance(new CobaltPluginWebContainer(getActivity(),this));
+		signature.onActivityResult(requestCode, resultCode, data);
+
 		super.onActivityResult(requestCode, resultCode, data);
 	}
 }
