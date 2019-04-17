@@ -4,9 +4,6 @@
 [submodule "locationplugin"]
 	path = locationplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-Location-Android.git
-[submodule "pubsubplugin"]
-	path = pubsubplugin
-	url = git://github.com/Cobaltians-Plugins/plugins-PubSub-Android.git
 [submodule "appinfosplugin"]
 	path = appinfosplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-AppInfos-Android.git

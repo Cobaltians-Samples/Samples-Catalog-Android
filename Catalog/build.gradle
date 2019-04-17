@@ -26,7 +26,6 @@ dependencies {
     implementation project(path: ':permissions')
     implementation project(path: ':cobalt')
     implementation project(path: ':locationplugin')
-    implementation project(path: ':pubsubplugin')
     implementation project(path: ':appinfosplugin')
     implementation project(path: ':fontAwesome')
     implementation project(path: ':actionpickerplugin')

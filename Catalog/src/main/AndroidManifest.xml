@@ -19,7 +19,6 @@
         <activity android:name=".activities.EventsActivity" />
         <activity android:name=".activities.ModalActivity" />
         <activity android:name=".activities.NativeBarsActivity" />
-        <activity android:name=".activities.PluginsActivity" />
         <activity android:name=".activities.PullToRefreshActivity" />
         <activity android:name=".activities.PullToRefreshCustomActivity" />
 
