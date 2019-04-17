@@ -41,3 +41,6 @@
 	path = signatureplugin
 	url = https://github.com/Cobaltians-Plugins/Plugins-Signature-Android.git
 	branch = cobalt1.0
+[submodule "snackbarplugin"]
+	path = snackbarplugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-Snackbar-Android.git
