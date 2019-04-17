@@ -26,10 +26,6 @@
 	path = pdfplugin
 	url = https://github.com/Cobaltians-Plugins/Plugins-Pdf-Android.git
 	branch = develop
-[submodule "Catalog/src/main/assets/www"]
-	path = Catalog/src/main/assets/www
-	url = git@github.com:Cobaltians-Samples/Samples-Catalog-Web.git
-	branch = cobalt1.0
 [submodule "geolocpickerplugin"]
 	path = geolocpickerplugin
 	url = https://github.com/Cobaltians-Plugins/Plugins-GeolocPicker-Android.git
