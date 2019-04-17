@@ -1,5 +1,12 @@
 package org.cobaltians.catalog.fragments;
 
+import org.cobaltians.catalog.R;
+
+import org.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.pubsub.PubSub;
+import org.cobaltians.cobalt.pubsub.PubSubInterface;
+import org.cobaltians.cobalt.Cobalt;
+
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,18 +15,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import org.cobaltians.catalog.R;
-
-import org.cobaltians.cobalt.pubsub.PubSub;
-import org.cobaltians.cobalt.pubsub.PubSubInterface;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.cobaltians.cobalt.Cobalt;
-
-public class EventsFragment extends AbstractFragment implements PubSubInterface
+public final class EventsFragment extends CobaltFragment implements PubSubInterface
 {
-
     // ZOOM
     protected final static String JSNameSetZoom = "setZoom";
     protected final static String JSNameHello = "hello";

@@ -1,5 +1,10 @@
 package org.cobaltians.catalog.fragments;
 
+import org.cobaltians.cobalt.Cobalt;
+import org.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.pubsub.PubSub;
+import org.cobaltians.cobalt.pubsub.PubSubInterface;
+
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,18 +15,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-import org.cobaltians.cobalt.Cobalt;
-import org.cobaltians.cobalt.pubsub.PubSub;
-import org.cobaltians.cobalt.pubsub.PubSubInterface;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class CallbacksFragment extends AbstractFragment implements PubSubInterface
+public final class CallbacksFragment extends CobaltFragment implements PubSubInterface
 {
- 
 	private static final String JSDoSomeMathsFromNative = "doSomeMathsFromNative";
     private static final String JSDoSomeMathsFromNativeResponse = "doSomeMathsFromNativeResponse";
     private static final String JSDoSomeMathsFromWeb = "doSomeMathsFromWeb";

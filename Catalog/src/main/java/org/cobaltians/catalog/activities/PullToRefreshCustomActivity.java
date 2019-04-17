@@ -4,9 +4,11 @@ import org.cobaltians.catalog.fragments.PullToRefreshCustomFragment;
 
 import org.cobaltians.cobalt.fragments.CobaltFragment;
 
-public class PullToRefreshCustomActivity extends AbstractActivity {
-
-	protected CobaltFragment getFragment(){
+public final class PullToRefreshCustomActivity extends DefaultActivity
+{
+	@Override
+	protected CobaltFragment getFragment()
+	{
 		return new PullToRefreshCustomFragment();
 	}
 }

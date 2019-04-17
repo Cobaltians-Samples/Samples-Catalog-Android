@@ -4,10 +4,11 @@ import org.cobaltians.catalog.fragments.EventsFragment;
 
 import org.cobaltians.cobalt.fragments.CobaltFragment;
 
-public class EventsActivity extends AbstractActivity {
-	
-	protected CobaltFragment getFragment(){
+public final class EventsActivity extends DefaultActivity
+{
+	@Override
+	protected CobaltFragment getFragment()
+	{
 		return new EventsFragment();
 	}
-
 }
