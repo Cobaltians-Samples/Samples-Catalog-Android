@@ -18,6 +18,7 @@
         <activity android:name=".activities.CallbacksActivity" />
         <activity android:name=".activities.DefaultActivity" />
         <activity android:name=".activities.EventsActivity" />
+        <activity android:name=".activities.PluginsActivity" />
         <activity android:name=".activities.PullToRefreshCustomActivity" />
 
     </application>
