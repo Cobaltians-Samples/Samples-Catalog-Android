@@ -36,6 +36,7 @@ dependencies {
     implementation project(path: ':pdfplugin')
     implementation project(path: ':geolocpickerplugin')
     implementation project(path: ':signatureplugin')
+    implementation project(path: ':assetcacheplugin')
 
 
 }

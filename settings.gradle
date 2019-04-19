@@ -12,4 +12,5 @@ include ':Catalog',
         ':shareplugin',
         ':snackbarplugin',
         ':geolocpickerplugin',
-        ':signatureplugin'
+        ':signatureplugin',
+        ':assetcacheplugin'
