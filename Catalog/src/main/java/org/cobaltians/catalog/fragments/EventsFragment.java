@@ -84,7 +84,7 @@ public final class EventsFragment extends CobaltFragment implements PubSubInterf
 	{
 		super.onResume();
 		
-		PubSub.getInstance().subscribeToChannel(this, JSNameHello);
+		PubSub.getInstance().subscribeToChannel(JSNameHello, this);
 	}
 	
 	@Override
@@ -92,7 +92,7 @@ public final class EventsFragment extends CobaltFragment implements PubSubInterf
 	{
 		super.onPause();
 		
-		PubSub.getInstance().unsubscribeFromChannel(this, JSNameHello);
+		PubSub.getInstance().unsubscribeFromChannel(JSNameHello, this);
 	}
 	
 	@Override

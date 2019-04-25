@@ -111,10 +111,10 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
         super.onResume();
         
         PubSub pubsub = PubSub.getInstance();
-        pubsub.subscribeToChannel(this, JSDoSomeMathsFromWeb);
-        pubsub.subscribeToChannel(this, JSDoSomeMathsFromNativeResponse);
-        pubsub.subscribeToChannel(this, JSAutoTestsFromWeb);
-        pubsub.subscribeToChannel(this, JSAutoTestsFromNativeCallback);
+        pubsub.subscribeToChannel(JSDoSomeMathsFromWeb, this);
+        pubsub.subscribeToChannel(JSDoSomeMathsFromNativeResponse, this);
+        pubsub.subscribeToChannel(JSAutoTestsFromWeb, this);
+        pubsub.subscribeToChannel(JSAutoTestsFromNativeCallback, this);
     }
     
     @Override
@@ -123,10 +123,10 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
         super.onPause();
     
         PubSub pubsub = PubSub.getInstance();
-        pubsub.unsubscribeFromChannel(this, JSDoSomeMathsFromWeb);
-        pubsub.unsubscribeFromChannel(this, JSDoSomeMathsFromNativeResponse);
-        pubsub.unsubscribeFromChannel(this, JSAutoTestsFromWeb);
-        pubsub.unsubscribeFromChannel(this, JSAutoTestsFromNativeCallback);
+        pubsub.unsubscribeFromChannel(JSDoSomeMathsFromWeb, this);
+        pubsub.unsubscribeFromChannel(JSDoSomeMathsFromNativeResponse, this);
+        pubsub.unsubscribeFromChannel(JSAutoTestsFromWeb, this);
+        pubsub.unsubscribeFromChannel(JSAutoTestsFromNativeCallback, this);
     }
     
     @Override
