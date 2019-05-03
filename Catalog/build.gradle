@@ -23,7 +23,6 @@ android {
 dependencies {
     implementation 'junit:junit:4.12'
 
-    implementation project(path: ':permissions')
     implementation project(path: ':cobalt')
     implementation project(path: ':locationplugin')
     implementation project(path: ':appinfosplugin')

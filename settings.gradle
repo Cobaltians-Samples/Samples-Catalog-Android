@@ -1,5 +1,4 @@
 include ':Catalog',
-        ':permissions',
         ':cobalt',
         ':locationplugin',
         ':pubsubplugin',
