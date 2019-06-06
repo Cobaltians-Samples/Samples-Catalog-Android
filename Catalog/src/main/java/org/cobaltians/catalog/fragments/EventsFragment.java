@@ -1,20 +1,25 @@
 package org.cobaltians.catalog.fragments;
 
+import org.cobaltians.catalog.R;
+
+import org.cobaltians.cobalt.fragments.CobaltFragment;
+import org.cobaltians.cobalt.pubsub.PubSub;
+import org.cobaltians.cobalt.pubsub.PubSubInterface;
+import org.cobaltians.cobalt.Cobalt;
+
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import org.cobaltians.catalog.R;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.cobaltians.cobalt.Cobalt;
-
-public class EventsFragment extends AbstractFragment {
-
+public final class EventsFragment extends CobaltFragment implements PubSubInterface
+{
     // ZOOM
     protected final static String JSNameSetZoom = "setZoom";
     protected final static String JSNameHello = "hello";
@@ -73,35 +78,55 @@ public class EventsFragment extends AbstractFragment {
 			}
 		});
 	}
-
-
+	
+	@Override
+	public void onResume()
+	{
+		super.onResume();
+		
+		PubSub.getInstance().subscribeToChannel(JSNameHello, this);
+	}
+	
+	@Override
+	public void onPause()
+	{
+		super.onPause();
+		
+		PubSub.getInstance().unsubscribeFromChannel(JSNameHello, this);
+	}
+	
+	@Override
+	public void onMessageReceived(@Nullable JSONObject message, @NonNull String channel)
+	{
+		if (channel.equals(JSNameHello))
+		{
+			getActivity().runOnUiThread(new Runnable() {
+				@Override
+				public void run()
+				{
+					AlertDialog alert = new AlertDialog.Builder(getActivity())
+							.setTitle("hello")
+							.setMessage("hello world")
+							.setPositiveButton("OK", null)
+							.create();
+					alert.setCanceledOnTouchOutside(true);
+					alert.show();
+				}
+			});
+		}
+	}
+	
 	private void setZoomLevelInWebView(int nZoomLevel)
 	{
-		JSONObject data = new JSONObject();
-		try {
-			data.put(Cobalt.kJSValue, nZoomLevel);
-			sendEvent(JSNameSetZoom, data, null);
-		} catch (JSONException e) {
+		try
+		{
+			JSONObject message = new JSONObject();
+			message.put(Cobalt.kJSValue, nZoomLevel);
+			PubSub.getInstance().publishMessage(message, JSNameSetZoom);
+		}
+		catch (JSONException e)
+		{
 			e.printStackTrace();
 		}
 	}
-
-	@Override
-	protected boolean onUnhandledEvent(String name, JSONObject data, String callback) {
-        if(name.equals(JSNameHello)) {
-            AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
-            alert.setMessage("hello world");
-            AlertDialog mAlert = alert.create();
-            mAlert.setCanceledOnTouchOutside(true);
-            mAlert.show();
-            return true;
-        }
-        return false;
-	}
-
-	@Override
-	protected void onPullToRefreshRefreshed() { }
-
-	@Override
-	protected void onInfiniteScrollRefreshed() { }
 }

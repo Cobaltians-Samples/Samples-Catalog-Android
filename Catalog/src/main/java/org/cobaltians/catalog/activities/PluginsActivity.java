@@ -1,14 +1,14 @@
 package org.cobaltians.catalog.activities;
 
-import org.cobaltians.catalog.fragments.SimpleHybridFragment;
+import org.cobaltians.catalog.fragments.PluginsFragment;
 
 import org.cobaltians.cobalt.fragments.CobaltFragment;
 
-
-public class PluginsActivity extends AbstractActivity {
-
+public final class PluginsActivity extends DefaultActivity
+{
     @Override
-    protected CobaltFragment getFragment() {
-        return new SimpleHybridFragment();
+    protected CobaltFragment getFragment()
+    {
+        return new PluginsFragment();
     }
 }

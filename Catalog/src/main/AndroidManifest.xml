@@ -9,18 +9,16 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".activities.SimpleHybridActivity">
+        <activity android:name=".activities.IndexActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.CallbacksActivity" />
+        <activity android:name=".activities.DefaultActivity" />
         <activity android:name=".activities.EventsActivity" />
-        <activity android:name=".activities.ModalActivity" />
-        <activity android:name=".activities.NativeBarsActivity" />
         <activity android:name=".activities.PluginsActivity" />
-        <activity android:name=".activities.PullToRefreshActivity" />
         <activity android:name=".activities.PullToRefreshCustomActivity" />
 
     </application>

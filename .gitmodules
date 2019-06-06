@@ -1,35 +1,9 @@
 [submodule "cobalt"]
 	path = cobalt
 	url = git://github.com/cobaltians/Cobalt-Android.git
-	branch = 0.4.1
 [submodule "locationplugin"]
 	path = locationplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-Location-Android.git
-	branch = 0.4.1
-[submodule "pubsubplugin"]
-	path = pubsubplugin
-	url = git://github.com/Cobaltians-Plugins/plugins-PubSub-Android.git
-	branch = 0.4.1
-[submodule "Catalog/src/main/assets/www/common"]
-	path = Catalog/src/main/assets/www/common
-	url = git://github.com/Cobaltians-Samples/Samples-Catalog-Web.git
-	branch = 0.4.1
-[submodule "webservices"]
-	path = webservices
-	url = git://github.com/Cobaltians-Plugins/plugins-Webservices-Android.git
-	branch = 0.4.1
-[submodule "Catalog/src/main/assets/www/PubSubPlugin"]
-	path = Catalog/src/main/assets/www/PubSubPlugin
-	url = git://github.com/cobaltians-plugins/plugins-PubSub-Web.git
-[submodule "Catalog/src/main/assets/www/LocationPlugin"]
-	path = Catalog/src/main/assets/www/LocationPlugin
-	url = git://github.com/cobaltians-plugins/plugins-Location-Web.git
-[submodule "Catalog/src/main/assets/www/WebServicesPlugin"]
-	path = Catalog/src/main/assets/www/WebServicesPlugin
-	url = git://github.com/cobaltians-plugins/plugins-Webservices-Web.git
-[submodule "Catalog/src/main/assets/www/AppInfosPlugin"]
-	path = Catalog/src/main/assets/www/AppInfosPlugin
-	url = git://github.com/Cobaltians-Plugins/Plugins-AppInfos-Web.git
 [submodule "appinfosplugin"]
 	path = appinfosplugin
 	url = git://github.com/Cobaltians-Plugins/plugins-AppInfos-Android.git
@@ -39,32 +13,34 @@
 [submodule "actionpickerplugin"]
 	path = actionpickerplugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-ActionPicker-Android.git
-[submodule "Catalog/src/main/assets/www/ActionPickerPlugin"]
-	path = Catalog/src/main/assets/www/ActionPickerPlugin
-	url = git://github.com/Cobaltians-Plugins/Plugins-ActionPicker-Web.git
 [submodule "networkstatusplugin"]
 	path = networkstatusplugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-NetworkStatus-Android.git
-[submodule "Catalog/src/main/assets/www/NetworkStatusPlugin"]
-	path = Catalog/src/main/assets/www/NetworkStatusPlugin
-	url = git://github.com/Cobaltians-Plugins/Plugins-NetworkStatus-Web.git
 [submodule "batterystatusplugin"]
 	path = batterystatusplugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-BatteryStatus-Android.git
-[submodule "Catalog/src/main/assets/www/BatteryStatusPlugin"]
-	path = Catalog/src/main/assets/www/BatteryStatusPlugin
-	url = git://github.com/Cobaltians-Plugins/Plugins-BatteryStatus-Web.git
 [submodule "Plugins-Share-Android"]
 	path = shareplugin
 	url = git://github.com/Cobaltians-Plugins/Plugins-Share-Android.git
-[submodule "Catalog/src/main/assets/www/Plugins-Share-Web"]
-	path = Catalog/src/main/assets/www/SharePlugin
-	url = git://github.com/Cobaltians-Plugins/Plugins-Share-Web.git
 [submodule "pdfplugin"]
 	path = pdfplugin
 	url = https://github.com/Cobaltians-Plugins/Plugins-Pdf-Android.git
 	branch = develop
-[submodule "Catalog/src/main/assets/www/PdfPlugin"]
-	path = Catalog/src/main/assets/www/PdfPlugin
-	url = https://github.com/Cobaltians-Plugins/Plugins-Pdf-Web.git
-	branch = develop
+[submodule "geolocpickerplugin"]
+	path = geolocpickerplugin
+	url = https://github.com/Cobaltians-Plugins/Plugins-GeolocPicker-Android.git
+	branch = cobalt1.0
+[submodule "signatureplugin"]
+	path = signatureplugin
+	url = https://github.com/Cobaltians-Plugins/Plugins-Signature-Android.git
+	branch = cobalt1.0
+[submodule "snackbarplugin"]
+	path = snackbarplugin
+	url = git@github.com:Cobaltians-Plugins/Plugins-Snackbar-Android.git
+[submodule "Catalog/src/main/assets/www"]
+	path = Catalog/src/main/assets/www
+	url = git@github.com:Cobaltians-Samples/Samples-Catalog-Web.git
+	branch = cobalt1.0
+[submodule "assetcacheplugin"]
+	path = assetcacheplugin
+	url = https://github.com/Cobaltians-Plugins/Plugins-AssetCache-Android.git
