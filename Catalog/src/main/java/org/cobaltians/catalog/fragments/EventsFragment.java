@@ -84,7 +84,7 @@ public final class EventsFragment extends CobaltFragment implements PubSubInterf
 	{
 		super.onResume();
 		
-		PubSub.getInstance().subscribeToChannel(JSNameHello, this);
+		Cobalt.subscribeToChannel(JSNameHello, this);
 	}
 	
 	@Override
@@ -92,7 +92,7 @@ public final class EventsFragment extends CobaltFragment implements PubSubInterf
 	{
 		super.onPause();
 		
-		PubSub.getInstance().unsubscribeFromChannel(JSNameHello, this);
+		Cobalt.unsubscribeFromChannel(JSNameHello, this);
 	}
 	
 	@Override
@@ -122,7 +122,7 @@ public final class EventsFragment extends CobaltFragment implements PubSubInterf
 		{
 			JSONObject message = new JSONObject();
 			message.put(Cobalt.kJSValue, nZoomLevel);
-			PubSub.getInstance().publishMessage(message, JSNameSetZoom);
+			Cobalt.publishMessage(message, JSNameSetZoom);
 		}
 		catch (JSONException e)
 		{
