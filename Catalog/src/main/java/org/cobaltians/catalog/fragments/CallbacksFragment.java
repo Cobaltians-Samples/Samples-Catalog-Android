@@ -85,7 +85,7 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
                     message.put(kJSValues, new JSONArray(values));
                     message.put(Cobalt.kJSCallback, JSDoSomeMathsFromNativeResponse);
                     
-                    PubSub.getInstance().publishMessage(message, JSDoSomeMathsFromNative);
+                    Cobalt.publishMessage(message, JSDoSomeMathsFromNative);
 				}
 				catch (JSONException e)
                 {
@@ -109,24 +109,22 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
     public void onResume()
     {
         super.onResume();
-        
-        PubSub pubsub = PubSub.getInstance();
-        pubsub.subscribeToChannel(JSDoSomeMathsFromWeb, this);
-        pubsub.subscribeToChannel(JSDoSomeMathsFromNativeResponse, this);
-        pubsub.subscribeToChannel(JSAutoTestsFromWeb, this);
-        pubsub.subscribeToChannel(JSAutoTestsFromNativeCallback, this);
+
+        Cobalt.subscribeToChannel(JSDoSomeMathsFromWeb, this);
+        Cobalt.subscribeToChannel(JSDoSomeMathsFromNativeResponse, this);
+        Cobalt.subscribeToChannel(JSAutoTestsFromWeb, this);
+        Cobalt.subscribeToChannel(JSAutoTestsFromNativeCallback, this);
     }
     
     @Override
     public void onPause()
     {
         super.onPause();
-    
-        PubSub pubsub = PubSub.getInstance();
-        pubsub.unsubscribeFromChannel(JSDoSomeMathsFromWeb, this);
-        pubsub.unsubscribeFromChannel(JSDoSomeMathsFromNativeResponse, this);
-        pubsub.unsubscribeFromChannel(JSAutoTestsFromWeb, this);
-        pubsub.unsubscribeFromChannel(JSAutoTestsFromNativeCallback, this);
+
+        Cobalt.unsubscribeFromChannel(JSDoSomeMathsFromWeb, this);
+        Cobalt.unsubscribeFromChannel(JSDoSomeMathsFromNativeResponse, this);
+        Cobalt.unsubscribeFromChannel(JSAutoTestsFromWeb, this);
+        Cobalt.unsubscribeFromChannel(JSAutoTestsFromNativeCallback, this);
     }
     
     @Override
@@ -173,7 +171,7 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
                         JSONObject doSomeMathsMessage = new JSONObject();
                         doSomeMathsMessage.put(kJSResult, value1 + value2);
     
-                        PubSub.getInstance().publishMessage(doSomeMathsMessage, callback);
+                        Cobalt.publishMessage(doSomeMathsMessage, callback);
                     }
                 }
                 catch (JSONException e)
@@ -188,7 +186,7 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
                     {
                         String callback = message.getString(Cobalt.kJSCallback);
                         
-                        PubSub.getInstance().publishMessage(message, callback);
+                        Cobalt.publishMessage(message, callback);
                     }
                 }
                 catch (JSONException e)
@@ -257,7 +255,7 @@ public final class CallbacksFragment extends CobaltFragment implements PubSubInt
             message.put(Cobalt.kJSValue, mArrayTest.get(index));
             message.put(Cobalt.kJSCallback, JSAutoTestsFromNativeCallback);
 
-            PubSub.getInstance().publishMessage(message, JSAutoTestsFromNative);
+            Cobalt.publishMessage(message, JSAutoTestsFromNative);
         }
         catch (JSONException e)
         {
